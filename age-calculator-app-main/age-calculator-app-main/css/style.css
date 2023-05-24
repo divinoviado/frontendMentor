@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url('./assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url('./assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-ExtraBoldItalic;
+    src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url('./assets/fonts/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 32px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+    width: 600px;
+    height: 80vh;
+    margin: 50px auto;
+    padding-top: 70px;
+    /* padding: 30px; */
+    border-radius: 8px 8px 50px 8px;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.day, .month, .year{
+    font-size: 32px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.required {
+    border-color: hsl(0, 100%, 67%);
+}
+  
+.hidden {
+    display: none;
+}
+  
+
+hr {
+    margin: 0 40px;
+}
+
+.result {
+    width: 100%;
+}
+
+#error {
+    color: hsl(0, 100%, 67%);
+    font-size: 23px;
+}
+
+.left {
+    font-family: Poppins-Bold;
+    width: 50%;
+    /* background-color: red; */
+    float: left;
+    padding-right: 15px;
+    text-align: right;
+    color: hsl(259, 100%, 65%);
+    font-family: Poppins-ExtraBoldItalic;
+
+}
+
+.right {
+    width: 50%;
+    /* background-color: blue; */
+    float: right;
+    text-align: left;
+    padding-left: 15px;
+    font-family: Poppins-ExtraBoldItalic;
+
+}
+
+#btnCalculate {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
