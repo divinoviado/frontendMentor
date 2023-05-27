@@ -4,9 +4,9 @@ function copySelectedDay() {
   selectedElement.innerText = selectedOption;
 }
 
-function copySelectedMonth() {
-  const selectedOption = document.getElementById("month").value;
-  const selectedElement = document.getElementById("selectedMonth");
+function copySelectedBuwan() {
+  const selectedOption = document.getElementById("buwan").value;
+  const selectedElement = document.getElementById("selectedBuwan");
   selectedElement.innerText = selectedOption;
 }
 
@@ -18,7 +18,7 @@ function copyInputYear() {
 
 function calculateAge() {
   const selectedYear = parseInt(document.getElementById("year").value);
-  const selectedMonth = parseInt(document.getElementById("month").value);
+  const selectedBuwan = parseInt(document.getElementById("buwan").value);
   const selectedDay = parseInt(document.getElementById("day").value);
 
   const currentDate = new Date();
@@ -27,13 +27,13 @@ function calculateAge() {
   const currentDay = currentDate.getDate();
 
   let ageYear = currentYear - selectedYear;
-  let ageMonth = currentMonth - selectedMonth;
+  let ageMonth = currentMonth - selectedBuwan
   let ageDay = currentDay - selectedDay;
 
   const monthsWith30Days = [4, 6, 9, 11]; // April, June, September, November
 
   // Check for invalid input: Months with 30 days
-  if (monthsWith30Days.includes(selectedMonth) && selectedDay === 31) {
+  if (monthsWith30Days.includes(selectedBuwan) && selectedDay === 31) {
     // Display error message
     document.getElementById("error").textContent = "Invalid input: This month does not have 31 days";
     return; // Stop further calculations
@@ -47,14 +47,14 @@ function calculateAge() {
 
   // Display the calculated age in the HTML elements
   document.getElementById("inputYear").textContent = ageYear;
-  document.getElementById("selectedMonths").textContent = ageMonth;
-  document.getElementById("selectedDays").textContent = ageDay;
+  document.getElementById("selectedBuwan").textContent = ageMonth;
+  document.getElementById("selectedDay").textContent = ageDay;
   document.getElementById("error").textContent = ""; // Clear any previous error message
 }
 
 // Display required error message when empty
 function copySelectedMonth() {
-  var selectElement = document.getElementById("month");
+  var selectElement = document.getElementById("buwan");
   var requiredMessage = document.getElementById("requiredMessage");
 
   if (selectElement.value === "") {
